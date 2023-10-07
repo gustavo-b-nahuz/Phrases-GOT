@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#426BA8">
+
+    <TextView
+        android:id="@+id/frase_principal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frases de Game of Thrones"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/input_nome"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:fontFamily="@font/alata"
+        android:layout_marginTop="50sp"
+        android:layout_marginBottom="300sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_nome"
+        app:layout_constraintTop_toBottomOf="@id/frase_principal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/botao_guardar"
+        android:hint="Digite seu Nome"
+        android:textColorHint="@color/white"
+        android:textAlignment="center"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        />
+
+    <Button
+        android:layout_marginTop="150sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/botao_guardar"
+        app:layout_constraintTop_toBottomOf="@id/input_nome"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Guardar"
+        android:backgroundTint="#39bbec"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
