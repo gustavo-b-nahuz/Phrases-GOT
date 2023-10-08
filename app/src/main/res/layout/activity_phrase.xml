@@ -6,4 +6,76 @@
     android:layout_height="match_parent"
     tools:context=".PhraseActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:id="@+id/imagens"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/daenerys_img"
+            android:layout_weight="1"
+            android:background="#426BA8"
+            android:contentDescription="@string/description_daenerys_image"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/iron_throne"
+            android:layout_weight="1"
+            android:background="#426BA8"
+            android:contentDescription="@string/description_iron_throne_image"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/frase_ola"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imagens"
+        app:layout_constraintBottom_toTopOf="@+id/frase_gerada"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAlignment="center"
+        android:text="@string/greetings"
+        android:layout_marginTop="50sp"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/frase_gerada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/frase_ola"
+        app:layout_constraintBottom_toTopOf="@+id/line"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAlignment="center"
+        android:layout_marginTop="150sp"
+        android:layout_marginStart="50sp"
+        android:layout_marginEnd="50sp"
+        android:textSize="25sp"/>
+    
+    <View
+        android:id="@+id/line"
+        android:layout_width="200dp"
+        android:layout_height="4sp"
+        app:layout_constraintTop_toBottomOf="@id/frase_gerada"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="#426BA8"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:id="@+id/botao_gerar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/texto_segundo_botao"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#426BA8"
+        app:cornerRadius="0dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
