@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GOT Phrases</string>
+    <string name="greetings">Hello, %1$s!</string>
+    <string name="titulo_principal">Game of Thrones Phrases</string>
+    <string name="input_hint">Type your name</string>
+    <string name="guardar_botao">Save</string>
+    <string name="texto_segundo_botao">Generate another phrase</string>
+</resources>

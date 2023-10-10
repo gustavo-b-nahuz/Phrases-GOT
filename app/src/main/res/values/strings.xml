@@ -5,6 +5,6 @@
     <string name="input_hint">Digite seu Nome</string>
     <string name="guardar_botao">Guardar</string>
     <string name="texto_segundo_botao">Gerar outra frase</string>
-    <string name="description_daenerys_image">Daenerys image</string>
-    <string name="description_iron_throne_image">Iron Throne Image</string>
+    <string name="description_daenerys_image" translatable="false">Daenerys image</string>
+    <string name="description_iron_throne_image" translatable="false">Iron Throne Image</string>
 </resources>

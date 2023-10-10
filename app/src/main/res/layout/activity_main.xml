@@ -22,7 +22,7 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:id="@+id/input_nome"
         app:layout_constraintTop_toBottomOf="@id/frase_principal"
         app:layout_constraintRight_toRightOf="parent"
